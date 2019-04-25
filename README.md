@@ -1,2 +1,2 @@
-# Building a QEMU KVM host. [WIP]
+# Building a QEMU KVM Host [WIP]
 How to build a QEMU KVM host.
