@@ -5,10 +5,6 @@ How to build a QEMU KVM host.
 
 <!-- vim-markdown-toc GFM -->
 
-* [Prepare the Hard Disk](#operating-systems)
-    * [Identify the Operating System.](#identify-the-operating-system)
-* [References](#references)
-
 * [Prepare the Hard Disk](#prepare-the-hard-disk)
 * [Secure the Server](#secure-the-server)
     * [Automatic Security Updates](#automatic-security-updates)
