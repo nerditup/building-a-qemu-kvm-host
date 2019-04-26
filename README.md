@@ -14,7 +14,7 @@ How to build a QEMU KVM host.
     * [Automatic Security Updates](#automatic-security-updates)
     * [User Account with sudo Privileges](#user-account-with-sudo-privileges)
     * [SSH](#ssh)
-    * [Create a 4096-bit SSH Authentication Key-pair](#create-a-4096-bit-ssh-authentication-key-pair)
+    * [4096-bit SSH Authentication Key-pair](#4096-bit-ssh-authentication-key-pair)
     * [Remote SSH Keys](#remote-ssh-keys)
     * [Firewall](#firewall)
 * [Mount the Storage RAID](#mount-the-storage-raid)
@@ -34,7 +34,7 @@ How to build a QEMU KVM host.
 
 ### SSH
 
-### Create a 4096-bit SSH Authentication Key-pair
+### 4096-bit SSH Authentication Key-pair
 
 ### Remote SSH Keys
 
@@ -42,7 +42,7 @@ How to build a QEMU KVM host.
 
 The `nftables` package 
 
-Put the following configuration in /etc/nftables.conf
+Put the following configuration in `/etc/nftables.conf`
 
 ```
 flush ruleset
