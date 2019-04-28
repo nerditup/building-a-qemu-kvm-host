@@ -80,6 +80,18 @@ Example `/etc/fstab` configuration,
 UUID=99418827-5bf7-4390-94b2-d4bd67ec2cee /srv/storage xfs defaults 0 0
 ```
 
+## Bridge the Host Network
+
+## Install QEMU
+
+## Add User to KVM Group
+
+## Create the VM Disk
+
+## Create the TAP Device
+
+## Sharing Storage Between Host and Guest
+
 ### NFS
 
 ## References
