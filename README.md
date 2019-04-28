@@ -85,3 +85,4 @@ UUID=99418827-5bf7-4390-94b2-d4bd67ec2cee /srv/storage xfs defaults 0 0
 ## References
 
 - \[1\]: https://wiki.debian.org/
+- \[2\]: https://wiki.archlinux.org/ 
