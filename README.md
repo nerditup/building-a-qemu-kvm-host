@@ -67,14 +67,15 @@ table inet filter {
 
 ## Mount the Storage RAID
 
-To mount an `md` block device, we must specify the filesystem in `/etc/fstab` to mount. `lsblk` is used to get the UUID of the filesystem. The following command is used to get the UUID of the filesystem on `md0`,
+To mount an `md` RAID block device at boot, the filesystem must be configured in `/etc/fstab`. The following command is used to get the UUID of the filesystem on `md0`,
 
 ```
 $ lsblk -no UUID /dev/md0 
 99418827-5bf7-4390-94b2-d4bd67ec2cee
 ```
 
-The following is added to `/etc/fstab` ,
+Example `/etc/fstab` configuration,
+
 ```
 UUID=99418827-5bf7-4390-94b2-d4bd67ec2cee /srv/storage xfs defaults 0 0
 ```
