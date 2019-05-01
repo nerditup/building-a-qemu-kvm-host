@@ -19,7 +19,6 @@ How to build a QEMU KVM host.
 
 <!-- vim-markdown-toc -->
 
-
 ## Prepare the Hard Disk
 
 ## Secure the Server
@@ -92,7 +91,11 @@ UUID=99418827-5bf7-4390-94b2-d4bd67ec2cee /srv/storage xfs defaults 0 0
 
 ## Sharing Storage Between Host and Guest
 
-### NFS
+### Block Storage
+
+### File/NFS Storage
+
+### Object Storage
 
 ## References
 
