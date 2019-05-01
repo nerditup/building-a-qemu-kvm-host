@@ -14,7 +14,9 @@ How to build a QEMU KVM host.
     * [Remote SSH Keys](#remote-ssh-keys)
     * [Firewall](#firewall)
 * [Mount the Storage RAID](#mount-the-storage-raid)
-    * [NFS](#nfs)
+    * [Block Storage](#block-storage)
+    * [File/NFS Storage](#file-nfs-storage)
+    * [Object Storage](#object-storage)
 * [References](#references)
 
 <!-- vim-markdown-toc -->
