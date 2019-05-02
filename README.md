@@ -14,6 +14,12 @@ How to build a QEMU KVM host.
     * [Remote SSH Keys](#remote-ssh-keys)
     * [Firewall](#firewall)
 * [Mount the Storage RAID](#mount-the-storage-raid)
+* [Bridge the Host Network](#bridget-the-host-network)
+* [Install QEMU](#install-qemu)
+* [Add User to the KVM Group](#add-user-to-the-kvm-group)
+* [Create the VM Disk](#create-the-vm-disk)
+* [Create the TAP Device](#create-the-tap-device)
+* [Sharing Storage Between the Host and Guests](#sharing-storage-between-the-host-and-guest)
     * [Block Storage](#block-storage)
     * [File/NFS Storage](#file-nfs-storage)
     * [Object Storage](#object-storage)
@@ -83,13 +89,36 @@ UUID=99418827-5bf7-4390-94b2-d4bd67ec2cee /srv/storage xfs defaults 0 0
 
 ## Bridge the Host Network
 
+```
+# ip addr flush dev enp2s0
+# ip link add br0 type bridge
+# ip link set enp2s0 master br0
+# ip link set dev br0 up
+# ip link set dev enp2s0 up
+# systemctl restart networking
+```
+
 ## Install QEMU
 
+```
+# apt install qemu-system-x86 qemu-utils
+```
+
 ## Add User to KVM Group
+
+```
+# usermod -a -G kvm $(whoami)
+```
 
 ## Create the VM Disk
 
 ## Create the TAP Device
+
+```
+# ip tuntap add dev tap0 mode tap user $(whoami)
+# ip link set tap0 master br0
+# ip link set dev tap0 up
+```
 
 ## Sharing Storage Between Host and Guest
 
