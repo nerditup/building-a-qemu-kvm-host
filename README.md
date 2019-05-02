@@ -43,7 +43,9 @@ How to build a QEMU KVM host.
 
 ### Firewall
 
-The `nftables` package 
+```
+# apt install nftables
+```
 
 Put the following configuration in `/etc/nftables.conf`
 
@@ -63,7 +65,7 @@ table inet filter {
                 # activate the following line to accept common local services
                 tcp dport { 22 } ct state new accept
 
-                # accept neighbour discovery otherwise IPv6 connectivity breaks.
+                # accept neighbour discovery otherwise IPv6 connectivity breaks
                 ip6 nexthdr icmpv6 icmpv6 type { nd-neighbor-solicit,  nd-router-advert, nd-neighbor-advert } accept
 
                 # count and drop any other traffic
