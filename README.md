@@ -103,7 +103,7 @@ UUID=99418827-5bf7-4390-94b2-d4bd67ec2cee /srv/storage xfs defaults 0 0
 ## Install QEMU
 
 ```
-# apt install qemu-system-x86 qemu-utils
+# apt --no-install-recommends install qemu-kvm
 ```
 
 ## Add User to KVM Group
